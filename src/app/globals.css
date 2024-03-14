@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .primary-rounded {
+    @apply p-2 border rounded;
+  }
+  .main-cta {
+    @apply text-white bg-blue-600;
+  }
+  .main-cta-hover {
+    @apply text-blue-600 bg-white border-blue-600;
+  }
+  .delete-cta {
+    @apply text-white bg-red-600;
+  }
+  .delete-cta-hover {
+    @apply text-red-600 bg-white border-red-600;
+  }
+}
