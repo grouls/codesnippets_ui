@@ -16,10 +16,10 @@ export default async function SnippetEditPage(props: SnippetEditPageProps) {
   return !snippet ? (
     notFound()
   ) : (
-    <div>
+    <>
       <div className="flex m-4 justify-between items center">
         <SnippetEditForm snippet={snippet} />
       </div>
-    </div>
+    </>
   );
 }

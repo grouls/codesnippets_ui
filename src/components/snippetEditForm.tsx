@@ -15,10 +15,10 @@ export default function SnippetEditForm({ snippet }: SnippetEditFormProps) {
   };
   const editSnippetAction = editSnippet.bind(null, snippet.id, code);
   return (
-    <div>
+    <div className="max-w-fit">
       <Editor
         height="40vh"
-        width="600px"
+        width="500px"
         theme="vs-dark"
         defaultLanguage="javascript"
         defaultValue={snippet.code}
